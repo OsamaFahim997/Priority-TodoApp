@@ -9,11 +9,15 @@ import SwiftUI
 
 @main
 struct PriorityApp: App {
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
             }
         }
+        .environmentObject(listViewModel)
     }
 }
