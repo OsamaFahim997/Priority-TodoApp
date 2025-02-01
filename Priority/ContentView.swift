@@ -8,17 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var items: [String] = [
+        "This is first item",
+        "Buy groceries",
+        "Buy apples"
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            ForEach(items, id: \.self) { item in
+                ListRowView(title: item)
+            }
         }
-        .padding()
+        .navigationTitle("To do list")
+        .navigationBarItems(
+            leading: EditButton(), 
+            trailing: NavigationLink("Add", destination: {
+                AddView()
+            })
+        )
     }
 }
 
 #Preview {
-    ContentView()
+    NavigationView(content: {
+        ContentView()
+    })
 }
