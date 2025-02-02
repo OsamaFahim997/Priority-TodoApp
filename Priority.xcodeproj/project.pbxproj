@@ -15,6 +15,7 @@
 		7A9C71EB2D4E936B00D510A5 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C71EA2D4E936B00D510A5 /* AddView.swift */; };
 		7A9C71ED2D4E980700D510A5 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C71EC2D4E980700D510A5 /* ItemModel.swift */; };
 		7A9C71F02D4ED34000D510A5 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C71EF2D4ED34000D510A5 /* ListViewModel.swift */; };
+		7A9C71F32D4FAB5800D510A5 /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C71F22D4FAB5800D510A5 /* NoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7A9C71EA2D4E936B00D510A5 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		7A9C71EC2D4E980700D510A5 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		7A9C71EF2D4ED34000D510A5 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		7A9C71F22D4FAB5800D510A5 /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				7A9C71E72D4E928600D510A5 /* ListRowView.swift */,
 				7A9C71EA2D4E936B00D510A5 /* AddView.swift */,
+				7A9C71F22D4FAB5800D510A5 /* NoItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A9C71ED2D4E980700D510A5 /* ItemModel.swift in Sources */,
+				7A9C71F32D4FAB5800D510A5 /* NoItemView.swift in Sources */,
 				7A9C71EB2D4E936B00D510A5 /* AddView.swift in Sources */,
 				7A9C71F02D4ED34000D510A5 /* ListViewModel.swift in Sources */,
 				7A9C71DC2D4E912A00D510A5 /* ContentView.swift in Sources */,
