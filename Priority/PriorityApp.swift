@@ -17,7 +17,8 @@ struct PriorityApp: App {
             NavigationView {
                 ContentView()
             }
+            .navigationViewStyle(StackNavigationViewStyle())
+            .environmentObject(listViewModel)
         }
-        .environmentObject(listViewModel)
     }
 }

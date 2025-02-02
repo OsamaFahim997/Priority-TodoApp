@@ -27,14 +27,15 @@ struct AddView: View {
                     saveButtonPressed()
                 }, label: {
                     Text("SAVE")
+                        .padding()
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .frame(height: 50)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
                 })
-                .padding()
-                .foregroundColor(.white)
-                .font(.headline)
-                .frame(height: 50)
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                .background(Color.blue)
-                .cornerRadius(10)
+                .contentShape(Rectangle())
             }
             .padding()
         }
@@ -45,7 +46,7 @@ struct AddView: View {
     }
     
     func saveButtonPressed() {
-        if viewModel.validText(title: textfieldText) {
+        if textfieldText.count >= 3 {
             viewModel.addItem(title: textfieldText)
             isPresented.callAsFunction()
         } else {
